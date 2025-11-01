@@ -1,3 +1,6 @@
+ADDITIONAL_CFLAGS += -Wno-error=vla-cxx-extension
+ADDITIONAL_CXXFLAGS += -Wno-error=vla-cxx-extension
+
 ifeq ($(ROOTLESS),1)
 THEOS_PACKAGE_SCHEME = rootless
 else ifeq ($(ROOTHIDE),1)
